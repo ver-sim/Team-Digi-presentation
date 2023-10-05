@@ -1,6 +1,19 @@
 let team_3 = [
-
-    {name:"Marco", 
+  {
+    name: "Verdiana", 
+    surname: "Simonetti", 
+    age: 29, 
+    city: "Chiusdino", 
+    hobby: "leggere", 
+    favoriteFood: "lasagna", 
+    favoriteVideoGame: "AoM", 
+    favoriteFilm: "guardiani della galassia", 
+    favoriteBook: "honzuki", 
+    petName: "kyuubu"
+  },
+  
+  {
+    name:"Marco", 
     surname:"Fonti", 
     age: 24, 
     city: "Bologna", 
@@ -9,6 +22,8 @@ let team_3 = [
     favoriteVideoGame:"Fifa24", 
     favoriteFilm: "Troy", 
     favoriteBook: "Sherlock Holmes", 
-    petName: "Zoe"}
-
+    petName: "Zoe"
+  },
+    
+    
 ];
