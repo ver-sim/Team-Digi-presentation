@@ -62,3 +62,67 @@ let team_3 = [
 		petName: "nn",
 	}  
 ];
+
+
+/* funzioni della tasck */
+
+team_3.sort(function(a, b) {
+    
+    let cognomeA = a.surname.toLowerCase(); // Cognome del primo elemento
+    let cognomeB = b.surname.toLowerCase(); // Cognome del secondo elemento
+
+    let result = cognomeA.localeCompare(cognomeB); // Confronto tra cognomi
+
+    if (result === 0) {
+        // Se i cognomi sono uguali, ordina per nome
+        let nomeA = a.name.toLowerCase(); // Nome del primo elemento
+        let nomeB = b.name.toLowerCase(); // Nome del secondo elemento
+        result = nomeA.localeCompare(nomeB); // Confronto tra nomi
+    }
+
+    return result;
+});
+
+// Stampa l'array ordinato
+team_3.forEach(function(team_3) {
+    console.log(team_3.surname + " " + team_3.name);
+});
+
+function fromYtoO(array) {
+	for (let i = 0; i < array.length - 1; i++) {
+		for (let j = 1; j < array.length; j++) {
+			if (array[i].age > array[j].age) {
+				let tmp = array[j];
+				array[j] = array[i];
+				array[i] = tmp;
+			}
+		}
+	}
+	for (let i = 0; i < array.length; i++) {
+		console.log(array[i].surname + " " + array[i].age);
+	}
+}
+
+function middleAge(array) 
+{
+    let sum = 0;     
+    for (let i = 0; i < array.length; i++) 
+    {
+        sum += array[i].age;     
+    }    
+    console.log(sum / array.length); 
+}
+
+function pet(array){
+    for(let i=0; i< Array.length;i++){
+        if(array[i].petName == "")
+        console.log(array[i].name + "");
+    }
+}
+
+function lol(array) {
+    for(let i=0; i < Array.length;i++){
+        if (array[i].favoriteVideoGame == "LOL")
+        console.log(array[i].name + "'s favorite game is LOL" );
+    }
+}
