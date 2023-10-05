@@ -1,4 +1,5 @@
 team_3.sort(function(a, b) {
+    
     let cognomeA = a.surname.toLowerCase(); // Cognome del primo elemento
     let cognomeB = b.surname.toLowerCase(); // Cognome del secondo elemento
 
